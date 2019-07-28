@@ -1,0 +1,43 @@
+.TH _PRINTF 1 "27 July 2019" "0.1" "_printf man page"
+.SH NAME
+.B _printf
+- format and print data.
+.SH SYNOPSIS
+.I #include "holberton.h"
+.P
+.IR int _printf(const 
+.I char 
+*format, 
+.B ...);
+.P
+.B _printf 
+.I FORMAT 
+.IR [ARGUMENT] ...
+.SH DESCRIPTION
+.B _Printf()
+.P
+Print 
+.B ARGUMENT(s) 
+according to the 
+.B FORMAT 
+used
+.PP
+FORMAT controls the output. Interpreted sequences are:
+.IP %c
+Character
+.IP %s
+String of characters
+.IP %d
+Signed decimal
+.IP %i
+Signed integer
+.IP %
+single percent
+.IP %%
+Double percent
+.SH SEE ALSO
+printf(1)
+.SH BUGS
+No known bugs.
+.SH AUTHOR
+Diego Ramos, Juan Cortes.
