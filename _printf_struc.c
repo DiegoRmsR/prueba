@@ -4,24 +4,24 @@
  * @s: pointer to structure
  * Return: function
  */
-int (*get_print_func(char *s))(va_list)
+int get_print_func(char identifier, va_list list)
 {
 
 print pf[] = {
 	{"c", print_char},
 	{"s", print_string},
-	{"d", print_decimal},
-	{"i", print_int}
 	{NULL, NULL}
 	};
-	int i;
+	int i = 0, length = 0;
 
-	i = 0;
-	while (i < 2)
+	while (pf[i].format != NULL)
 	{
-		if (pf[i].format[0] == *s)
-		return (pf[i].f);
+		if (pf[i].format[0] == identifier)
+		{
+			length += pf[i].f(list);
+			return (length);
+		}
 		i++;
 	}
-	return (NULL);
+	return (0);
 }

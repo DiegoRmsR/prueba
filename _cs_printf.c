@@ -6,12 +6,12 @@
  * Return: 1
 */
 
-void print_char(va_list, *list)
+int print_char(va_list list)
 {
 	char c;
 
 	c = va_arg(list, int);
-	putchar(c);
+	_putchar(c);
 	return (1);
 }
 /**
@@ -20,7 +20,7 @@ void print_char(va_list, *list)
  *
  * Return: Number of chars printed
 */
-void print_string(va_list, *list)
+int print_string(va_list list)
 {
 	char *s;
 	int i = 0;
