@@ -21,7 +21,13 @@ int _printf(const char *format, ...);
 int get_print_func(char identifier, va_list list);
 int print_char(va_list list);
 int print_string(va_list list);
-int print_decimal(va_list list);
-int print_int(va_list list);
 int print_porcent(va_list list);
+int print_integer(va_list list);
+int print_base2(unsigned int n, int length);
+int print_binary(va_list list);
+int print_unsint(va_list list);
+int print_base8(unsigned int n, int length);
+int print_octal(va_list list);
+int print_hexa(va_list list);
+
 #endif
