@@ -21,9 +21,9 @@ int print_base2(unsigned int n, int length)
  */
 int print_binary(va_list list)
 {
-	int length = 0, negative = 0;
+	int length = 0;
 	unsigned int b = va_arg(list, unsigned int);
 
-	length = print_base2(b, length) + negative + 1;
+	length = print_base2(b, length) + 1;
 	return (length);
 }

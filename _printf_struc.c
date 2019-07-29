@@ -15,10 +15,7 @@ print pf[] = {
 	{"d", print_integer},
 	{"i", print_integer},
 	{"b", print_binary},
-	{"u", print_unsint},
 	{"o", print_octal},
-	{"x", print_hexa},
-	{"X", print_hexa},
 	{NULL, NULL}
 	};
 	int i = 0, length = 0;
