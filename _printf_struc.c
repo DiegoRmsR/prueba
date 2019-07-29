@@ -1,7 +1,8 @@
 #include "holberton.h"
 /**
- * get_op_func - select the function
- * @s: pointer to structure
+ * get_print_func - select the function
+ * @identifier: format to be printed
+ * @list: pointer to structure
  * Return: function
  */
 int get_print_func(char identifier, va_list list)
@@ -10,6 +11,7 @@ int get_print_func(char identifier, va_list list)
 print pf[] = {
 	{"c", print_char},
 	{"s", print_string},
+	{"%", print_porcent},
 	{NULL, NULL}
 	};
 	int i = 0, length = 0;

@@ -33,3 +33,15 @@ int print_string(va_list list)
 	}
 	return (i);
 }
+/**
+ * print_porcent - print a %
+ * @list: size of %
+ *
+ * Return: 1
+*/
+int print_porcent(va_list list)
+{
+	(void) list;
+	_putchar('%');
+	return (1);
+}

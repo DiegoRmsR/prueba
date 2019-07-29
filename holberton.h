@@ -5,9 +5,9 @@
 #include <stdarg.h>
 #include <unistd.h>
 /**
- * struct op - Struct op
+ * struct format - Struct format
  *
- * @op: The operator
+ * @format: The operator
  * @f: The function associated
  */
 typedef struct format
@@ -23,5 +23,5 @@ int print_char(va_list list);
 int print_string(va_list list);
 int print_decimal(va_list list);
 int print_int(va_list list);
-
+int print_porcent(va_list list);
 #endif

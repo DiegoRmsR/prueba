@@ -1,5 +1,10 @@
 #include "holberton.h"
-
+/**
+ * _printf - prints according to format
+ * @format: The given format
+ *
+ * Return: On success 1.
+ */
 int _printf(const char *format, ...)
 {
 	va_list list;
